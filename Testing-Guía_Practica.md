@@ -214,6 +214,8 @@ El código `400` indica que la petición contiene datos que el servidor no acept
 
 Ejecutá `npm test` nuevamente. Explicá por qué esta comprobación es de **integración** y no solamente una prueba unitaria.
 
+RTA:Porque ya no solo es solo la comprobacion de una parte pequeña si no que esta esta involucrando la colaboracion de varias partes como puede ser la solicitud a express y revisar las respuestas.
+
 ## 8. Diferenciar pruebas y verificación de tipos
 
 Ejecutá:
