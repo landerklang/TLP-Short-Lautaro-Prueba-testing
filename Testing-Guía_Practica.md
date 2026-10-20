@@ -178,6 +178,8 @@ Escribí las otras dos pruebas siguiendo el modelo de `toThrow(RangeError)` que 
 
 **Desafío adicional:** agregá una prueba para `NaN` como precio. ¿La validación actual lo rechaza?
 
+RTA: No esta ya lo toma encuenta las validaciones
+
 ## 7. Primera prueba de integración HTTP
 
 Hasta ahora se probó la función de manera aislada. Ahora comprobarás cómo colaboran **la ruta HTTP de Express y el servicio de cálculo**.
