@@ -177,6 +177,7 @@ it("devuelve cero con un descuento del 100 %", () => {
 Escribí las otras dos pruebas siguiendo el modelo de `toThrow(RangeError)` que ya existe. Ejecutá `npm test` y verificá el resultado.
 
 **Desafío adicional:** agregá una prueba para `NaN` como precio. ¿La validación actual lo rechaza?
+RTA: si lo rechaza
 
 ## 7. Primera prueba de integración HTTP
 
@@ -211,6 +212,8 @@ it("responde HTTP 400 ante un descuento inválido", async () => {
 El código `400` indica que la petición contiene datos que el servidor no acepta. La ruta de `src/app.ts` ya contempla la respuesta `400` cuando el servicio lanza `RangeError` o `TypeError`.
 
 Ejecutá `npm test` nuevamente. Explicá por qué esta comprobación es de **integración** y no solamente una prueba unitaria.
+
+RTA:Es de integracion debido a que ya no se comprueba una funcion porque este primero manda una peticion al servidor este debe de funcionar correctamente luego de que valide que la peticion es correcta debe de pasar a la funcion precion y que este no suelte ningun error de validación.
 
 ## 8. Diferenciar pruebas y verificación de tipos
 
