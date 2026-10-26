@@ -178,8 +178,6 @@ Escribí las otras dos pruebas siguiendo el modelo de `toThrow(RangeError)` que 
 
 **Desafío adicional:** agregá una prueba para `NaN` como precio. ¿La validación actual lo rechaza?
 
-RTA: No esta ya lo toma encuenta las validaciones
-
 ## 7. Primera prueba de integración HTTP
 
 Hasta ahora se probó la función de manera aislada. Ahora comprobarás cómo colaboran **la ruta HTTP de Express y el servicio de cálculo**.
@@ -213,8 +211,6 @@ it("responde HTTP 400 ante un descuento inválido", async () => {
 El código `400` indica que la petición contiene datos que el servidor no acepta. La ruta de `src/app.ts` ya contempla la respuesta `400` cuando el servicio lanza `RangeError` o `TypeError`.
 
 Ejecutá `npm test` nuevamente. Explicá por qué esta comprobación es de **integración** y no solamente una prueba unitaria.
-
-RTA:Porque ya no solo es solo la comprobacion de una parte pequeña si no que esta esta involucrando la colaboracion de varias partes como puede ser la solicitud a express y revisar las respuestas.
 
 ## 8. Diferenciar pruebas y verificación de tipos
 
