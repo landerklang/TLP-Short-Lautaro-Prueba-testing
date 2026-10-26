@@ -254,9 +254,13 @@ En la versión actualizada del proyecto, el workflow utiliza `npm install`. Desp
 ## 11. Preguntas de cierre
 
 1. ¿Qué diferencia hay entre comprobar manualmente una respuesta y ejecutar una prueba automatizada?
+   RTA:supongo que la diferencia radica en que las pruba automatica son siempre las misma mientras que las manuales pueden llegar a cambiar algunos pequeños detalles cada ves que se ejecutan.
 2. ¿Cuál fue la causa de la primera prueba fallida?
+   RTA: Que la prueba esperaba que le dieran un error pero este no le llegaban
 3. ¿Por qué es útil incluir casos inválidos además de los casos habituales?
+   RTA: para saber si las validacion funciona correctamente.
 4. ¿Qué parte del sistema comprueba `tests/precios.test.ts` y qué partes comprueba `tests/api.test.ts`?
-5. ¿Qué ventajas ofrece ejecutar las pruebas después de cada modificación?
 
-**Referencias:** [Vitest](https://vitest.dev/guide/) · [Supertest](https://github.com/ladjs/supertest) · [Node.js: TypeScript](https://nodejs.org/api/typescript.html) · [GitHub Actions](https://docs.github.com/actions)
+5. ¿Qué ventajas ofrece ejecutar las pruebas después de cada modificación?
+   RTA: es ventajoso porque puede indentificar si uno de los elemento que modificaste afecto las pruebas
+   **Referencias:** [Vitest](https://vitest.dev/guide/) · [Supertest](https://github.com/ladjs/supertest) · [Node.js: TypeScript](https://nodejs.org/api/typescript.html) · [GitHub Actions](https://docs.github.com/actions)
