@@ -239,7 +239,6 @@ Si querés probarlo en GitHub:
 4. Comprobá qué ocurre si una prueba falla y luego se corrige.
 
 En la versión actualizada del proyecto, el workflow utiliza `npm install`. Después de generar y versionar `package-lock.json`, se recomienda cambiarlo a `npm ci` para obtener instalaciones reproducibles.
-dsfsfdsf
 
 ## 10. Registro de resultados
 
