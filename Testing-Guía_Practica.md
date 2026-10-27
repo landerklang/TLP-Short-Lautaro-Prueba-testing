@@ -242,14 +242,14 @@ En la versión actualizada del proyecto, el workflow utiliza `npm install`. Desp
 
 ## 10. Registro de resultados
 
-| Comprobación                     | Resultado | Observación |
-| -------------------------------- | --------- | ----------- |
-| Respuesta de `GET /healthy`      |           |             |
-| Primera ejecución de `npm test`  |           |             |
-| Corrección del servicio          |           |             |
-| Nuevas pruebas unitarias         |           |             |
-| Prueba de integración HTTP 400   |           |             |
-| Verificación `npm run typecheck` |           |             |
+| Comprobación                     | Resultado              | Observación                                                                                                                           |
+| -------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Respuesta de `GET /healthy`      | false                  | la ruta falla debido a que el nombre de esta no es igual a la que esta asignada ya que esta en ingle cuando la actual esta en español |
+| Primera ejecución de `npm test`  | falla 1 de las pruebas | falla debido a que una de las prueba no esta recibiendo lo que deberia de esperar                                                     |
+| Corrección del servicio          | ok                     | debido a la correcion de las prueba todas las prueba que ya esta funciona de forma correcta                                           |
+| Nuevas pruebas unitarias         | ok                     | funciona de forma correcta y no genero ningun problama con las antiguas pruebas                                                       |
+| Prueba de integración HTTP 400   | ok                     | la peticion sale correctamente si el sistema detecta que se esta enviando un descuento invalido                                       |
+| Verificación `npm run typecheck` | ok                     |                                                                                                                                       |
 
 ## 11. Preguntas de cierre
 
@@ -260,7 +260,7 @@ En la versión actualizada del proyecto, el workflow utiliza `npm install`. Desp
 3. ¿Por qué es útil incluir casos inválidos además de los casos habituales?
    RTA: para saber si las validacion funciona correctamente.
 4. ¿Qué parte del sistema comprueba `tests/precios.test.ts` y qué partes comprueba `tests/api.test.ts`?
-
+   RTA: el sistema `tests/precios.test.ts` comprueba que las validaciones de la funcion funcione correctamente y el `tests/api.test.ts` comprueba que las peticiones que manda el usuario se respondidas de forma correcta
 5. ¿Qué ventajas ofrece ejecutar las pruebas después de cada modificación?
    RTA: es ventajoso porque puede indentificar si uno de los elemento que modificaste afecto las pruebas
    **Referencias:** [Vitest](https://vitest.dev/guide/) · [Supertest](https://github.com/ladjs/supertest) · [Node.js: TypeScript](https://nodejs.org/api/typescript.html) · [GitHub Actions](https://docs.github.com/actions)
